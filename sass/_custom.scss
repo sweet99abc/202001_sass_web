@@ -1,0 +1,122 @@
+nav {
+  //padding: 10px 0;
+  a {
+    display: inline-block;
+    padding: 15px 8px;
+    //height: 50px;
+    //line-height: 50px;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+.logo {
+  float: left;
+}
+.menu {
+  float: right;
+  a {
+    //border-radius: 3px;
+    &:hover {
+      background-color: #fdf25c;
+      color: #000;
+    }
+  }
+}
+
+// header{
+//     //background-image: url("https://picsum.photos/id/123/1600/600");
+//     background-size: cover;
+//     background-position: center;
+//     //height: 600px;
+//     padding-top: 250px;
+//     padding-bottom: 250px;
+//     text-align: center;
+//     color: #fdf25c;
+// }
+
+header {
+  position: relative;
+  height: 0;
+  padding-bottom: 37.5%;     //前提是圖片在html裡, 寬度100%, 知道圖片比例 (目前圖片1600:600=100:x)
+  .wrapper {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    .content {
+      width: 600px;
+    }
+  }
+}
+
+// owl-carousel custom css
+#banner.owl-theme .owl-nav.disabled+.owl-dots  {
+  margin-top: -30px;
+  position: relative;
+  z-index: 999;
+}
+// .owl-theme .owl-nav.disabled+.owl-dots  {
+//   margin-top: -30px!important;
+//   position: relative;
+//   z-index: 999;
+// }
+
+// #about {
+//   font-size: 0;
+// }
+// #about .col-sm-6{
+//   display: inline-block;
+//   vertical-align: middle;
+//   font-size: 16px;
+//   float: none!important;
+// }
+#about {
+  // padding-top: 50px;
+  // padding-bottom: 50px;
+  // @include sm(){
+  //     padding-top: 100px;
+  //     padding-bottom: 100px;
+  // }
+  @include p();
+}
+#service {
+  background: #ffc4c4;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  @include sm(){
+      padding-top: 100px;
+      padding-bottom: 100px;
+  }
+}
+.form-control {
+  margin-bottom: 15px;
+  font-size: 0;
+}
+.form-control>*{
+  font-size: 16px;
+}
+input[type="text"] {
+  border:0;
+  border-bottom: 1px solid #666;
+  padding: 5px 10px;
+  width: 90%;
+  // width: 50%;
+  // border-radius: 5px;
+  outline: 0;
+  transition: .3s;
+  color: #fa0;
+}
+input[type="text"]:focus {
+  // border: 1px solid #fff127;
+  border-bottom: 1px solid #fa9;
+  background: rgb(221, 221, 221);
+  // width: 100%;
+}
+label{
+  min-width: 50px; width: 10%;
+  display: inline-block;
+}
+
+

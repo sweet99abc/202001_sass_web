@@ -1,0 +1,22 @@
+$colors:(
+    red: #ff00009b,
+    blue: rgb(4, 4, 180),
+    black: #000,
+    dark: #333333e3,
+    white: #fff,
+    light: #eee
+);
+
+$breakpoints:(
+    all: 0,
+    sm: 480px,
+    md: 720px,
+    lg: 1024px,
+    xl: 1200px
+);
+
+$col-padding: 15px;
+$grid: 12;
+
+$displays:none inline inline-block block table table-cell flex;
+
